@@ -34,14 +34,18 @@ function insertPokemon(){
 
             //Nombre e ID
             let pokemonName = document.createElement('h2')
-            pokemonName.innerText =`Name: ${result[10][1]} - ID: ${result[6][1]}`
+            pokemonName.innerText =`Nombre: ${result[10][1]} --- ID: ${result[6][1]}`
 
             //tipo
             let pokemonType = document.createElement('h2')
-            pokemonType.innerText = `Type: ${result[16][1][0].type.name}`
+            pokemonType.innerText = `Tipo: ${result[16][1][0].type.name}`
 
             //contenedor
             let container = document.createElement('div')
+            container.id = 'contenedor';
+            container.style.backgroundColor = '#0aec68';//edita css desde js
+            
+
             container.append(pokemonImage , pokemonName , pokemonType) 
 
             allItems.push(container)

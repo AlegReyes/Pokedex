@@ -1,0 +1,56 @@
+body{
+    background-image:  url("/fondo2.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+    /* Controla si la imagen de fondo se mueve o permanece fija cuando se hace scroll en la ventana del navegador */
+    background-attachment: fixed;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(21, 22, 22);
+    
+}
+h1{
+    border: 20px;
+    border-color:black;
+    padding: 20px 5px 5px 5px;
+}
+#searchPokemon{
+border-radius: 50%;
+width:150px;
+height: 150px;
+margin: 10px;
+}
+
+#deletePokemon{
+border-radius: 90%;
+width:150px;
+height: 150px;
+margin: 10px;
+}
+#sectionMain{
+    background-color: rgb(228, 67, 67);
+    width:500px;
+    height:500px;
+    text-align:center;
+    margin:auto;
+    margin-top: 10%;
+    border-radius:25% 10%;
+}
+
+#pokemonName{
+    width: 250px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: #0aec68;
+    text-align: center;
+    font-size:medium;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#contenedor{
+    border-radius: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 90%;
+    margin:auto;
+}
