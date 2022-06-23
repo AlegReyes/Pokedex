@@ -30,15 +30,21 @@ function insertPokemon(){
 
             //PARA CREAR LA IMAGEN DEL POKIMON
             let pokemonImage = document.createElement('img')
+            pokemonImage.id = 'imagenPokemon';
             pokemonImage.src=result[14][1].front_default
+    
 
             //Nombre e ID
             let pokemonName = document.createElement('h2')
-            pokemonName.innerText =`Nombre: ${result[10][1]} --- ID: ${result[6][1]}`
+            pokemonName.innerText =`Nombre: ${result[10][1].toUpperCase()} `
+
+          /*   //N
+            let pokemonName = document.createElement('h2')
+            pokemonName.innerText =`Nombre: ${result[10][1]} --- ID: ${result[6][1]}` */
 
             //tipo
             let pokemonType = document.createElement('h2')
-            pokemonType.innerText = `Tipo: ${result[16][1][0].type.name}`
+            pokemonType.innerText = `Tipo: ${result[16][1][0].type.name.toUpperCase()}`
 
             //contenedor
             let container = document.createElement('div')
@@ -63,7 +69,5 @@ function deletePokemon(){
 
     allPokemon.forEach(pokemon => {
         pokemon.remove(pokemon)
-    })
-
-    
+    })  
 }

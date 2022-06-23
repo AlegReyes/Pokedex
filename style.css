@@ -30,8 +30,8 @@ margin: 10px;
 }
 #sectionMain{
     background-color: rgb(228, 67, 67);
-    width:500px;
-    height:500px;
+    width:700px;
+    height:700px;
     text-align:center;
     margin:auto;
     margin-top: 10%;
@@ -53,4 +53,10 @@ margin: 10px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 90%;
     margin:auto;
+}
+#imagenPokemon{
+    height: 35%;
+    width: 35%;
+    object-fit: contain;
+
 }
